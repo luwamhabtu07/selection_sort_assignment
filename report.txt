@@ -1,0 +1,42 @@
+
+---
+
+### ✅ `report.txt`
+
+```txt
+Selection Sort Implementation and Analysis
+
+1. Implementation
+The selection sort algorithm works by repeatedly selecting the smallest element from the unsorted portion of the list and placing it at the beginning. This continues until the entire list is sorted.
+
+Key steps:
+- Loop through the list
+- Find the index of the minimum element in the unsorted part
+- Swap it with the current element
+
+2. Test Cases and Results
+
+- Random array: [64, 25, 12, 22, 11] → [11, 12, 22, 25, 64]
+- Already sorted: [1, 2, 3, 4, 5] → [1, 2, 3, 4, 5]
+- Descending order: [5, 4, 3, 2, 1] → [1, 2, 3, 4, 5]
+- All same elements: [7, 7, 7, 7] → [7, 7, 7, 7]
+- Empty array: [] → []
+- Single element: [42] → [42]
+
+3. Time and Space Complexity
+
+- Time Complexity: O(n^2), because of nested loops scanning the remaining array each time.
+- Space Complexity: O(1), as it is an in-place sort with no extra memory used.
+
+4. Stability
+
+Selection Sort is **not stable** because it swaps elements, potentially changing the order of equal values.
+Example: [(3, 'a'), (3, 'b')] → [(3, 'b'), (3, 'a')]
+
+A stable version shifts elements instead of swapping.
+
+5. Enhancements
+
+- A descending sort version was added.
+- A stable variant was implemented by shifting instead of swapping.
+
